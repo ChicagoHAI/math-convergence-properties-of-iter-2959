@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-02-11T18:37:22.258Z",
+  "generator": "scibook-math-agent",
+  "version": "1.0.0",
+  "topic": "How can we extend the theory of iterated function systems to network-structured compositions while maintaining convergence guarantees and practical applications?",
+  "title": "Convergence Properties of Iterated Function Networks on Metric Spaces",
+  "tags": [
+    "dynamical-systems",
+    "metric-spaces",
+    "graph-theory",
+    "fractals",
+    "optimization"
+  ]
+}

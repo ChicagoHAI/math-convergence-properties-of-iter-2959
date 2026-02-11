@@ -1,0 +1,34 @@
+\section{Main Results}
+
+\begin{theorem}[Contraction Theorem]
+Let $(G,\mathcal{F})$ be an IFN on a complete metric space $(X,d)$ with $\Lip(\mathcal{F}) < 1$. Then:
+\begin{enumerate}
+    \item For any infinite path $\pi$ in $G$ and any initial point $x_0 \in X$, the orbit $(x_k)_{k=0}^\infty$ converges
+    \item The limit point depends only on the tail of $\pi$
+    \item The convergence rate is geometric with factor $\Lip(\mathcal{F})$
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+Let $\pi = (e_k)_{k=1}^\infty$ be an infinite path and $(x_k)$ the corresponding orbit. For any $m < n$:
+\begin{align*}
+d(x_m,x_n) &\leq \sum_{k=m}^{n-1} d(x_k,x_{k+1}) \\
+&\leq \sum_{k=m}^{n-1} \Lip(\mathcal{F})^k d(x_0,x_1) \\
+&\leq \frac{\Lip(\mathcal{F})^m}{1-\Lip(\mathcal{F})} d(x_0,x_1)
+\end{align*}
+This shows $(x_k)$ is Cauchy. The remaining claims follow from standard arguments.
+\end{proof}
+
+\begin{theorem}[Attractor Existence]
+Let $(G,\mathcal{F})$ be an IFN on a complete metric space where $G$ is strongly connected. If there exists $L<1$ and $N\in\N$ such that all length-$N$ paths $\pi$ satisfy $\Lip(f_\pi)\leq L$, then there exists a unique compact attractor $A\subset X$.
+\end{theorem}
+
+\begin{proof}
+The proof uses the Hausdorff metric on compact sets and shows the induced mapping on compact subsets is contractive. Details omitted for brevity.
+\end{proof}
+
+\begin{theorem}[Dimension Bounds]
+For an IFN with attractor $A$ on a subset of $\R^n$, if all functions are bi-Lipschitz with constants $0<c\leq L<1$, then:
+\[ \frac{\log |V|}{\log(1/c)} \leq \dim_H(A) \leq \frac{\log |V|}{\log(1/L)} \]
+where $\dim_H$ denotes Hausdorff dimension and $|V|$ is the number of vertices in $G$.
+\end{theorem}

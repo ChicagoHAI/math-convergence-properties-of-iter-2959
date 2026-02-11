@@ -1,0 +1,21 @@
+\section{Preliminaries}
+
+\begin{definition}
+An \emph{Iterated Function Network} on a metric space $(X,d)$ is a pair $(G,\mathcal{F})$ where:
+\begin{itemize}
+    \item $G=(V,E)$ is a directed graph
+    \item $\mathcal{F}=\{f_e: X \to X\}_{e \in E}$ is a family of continuous functions
+\end{itemize}
+\end{definition}
+
+\begin{definition}
+For an IFN $(G,\mathcal{F})$, we define:
+\begin{itemize}
+    \item The \emph{Lipschitz constant} of edge $e$: $\Lip(f_e) = \sup_{x\neq y} \frac{d(f_e(x),f_e(y))}{d(x,y)}$
+    \item The \emph{network Lipschitz constant}: $\Lip(\mathcal{F}) = \sup_{e \in E} \Lip(f_e)$
+\end{itemize}
+\end{definition}
+
+\begin{definition}
+A path $\pi$ in $G$ of length $n$ induces a composition $f_\pi = f_{e_n} \circ \cdots \circ f_{e_1}$. The \emph{orbit} of a point $x_0$ along $\pi$ is the sequence $(x_k)_{k=0}^n$ where $x_k = f_{e_k}(x_{k-1})$.
+\end{definition}
